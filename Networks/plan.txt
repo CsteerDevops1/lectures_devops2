@@ -1,0 +1,92 @@
+Networking Intro, ISO/OSI, TCP/IP
+Overview.
+Постановка задачи, проблематика.
+Классификация сетей: pan/wan/man/lan.
+Сетевые топологии. bus star ring mesh distributestar
+Channel switching, circuit switching.
+PSTN, MPLS, Ethernet.
+Multiplexing: TDMA, FDMA, CDMA.
+ISO/OSI
+TCP/IP
+encapsulation
+cisco ios
+junos
+freebsd, openbsd, netbsd
+mikrotik os
+huawei
+d-link
+tp-link
+internet/intranet
+****************************
+Networking L2
+Ethernet, PPP
+broadcast networks
+switch
+wireless AP
+NIC
+MAC address
+cooper, fibre
+802.*
+L2 routing
+vlan
+etherchanel
+stp
+bridge vs hub
+csma/cd csma/ca
+****************************
+Networking L3
+ipv4
+ipv6
+arp
+ip address
+netmask
+L3 switching
+route
+route table
+gateway
+IGP EGP
+RIP/OSPF/EIGRP IS-IS
+Distance-Vector vs Link State
+BGP
+AS
+icmp
+ping, traceroute
+igmp
+ttl
+wireshark
+tshark
+****************************
+Networking L4
+Transport protocol
+Connection Oriented
+TCP, SCTP
+UDP
+SYN,SYN,ACK
+FIN, RST
+Windowing
+Fast start
+Reliability
+Checksums
+Multiplexing
+UDP: real time data
+UDP p2p networks
+NAT PAT
+UDP hole punching
+socket
+Network ACL
+tcp udp ports
+****************************
+Networking L7
+DNS
+DHCP bootp
+rarp
+FTP
+SMTP
+POP3
+IMAP
+telnet
+ssh, rsh
+nfs, smb
+HTTP
+snmp
+cdp
