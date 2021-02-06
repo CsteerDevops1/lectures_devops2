@@ -7,6 +7,6 @@ while True:
 		client_socket.close()
 		break
 	else:
-		client_socket.sendto(data,("localhost", 64692))
+		client_socket.sendto(data,("localhost", 5000))
 		newdata=client_socket.recvfrom(512)
 		print "Received:", newdata[0]

@@ -1,0 +1,15 @@
+https://www.cs.dartmouth.edu/~campbell/cs60/socketprogramming.html - лекция по соккетам и сетевому программированию.
+
+https://classroom.udacity.com/courses/ud303 - курс по http от udacity.
+
+https://stepik.org/course/154/syllabus - курс по http+python от stepik
+
+https://www.acmesystems.it/python_http
+
+https://httpie.org
+
+http://docs.python-requests.org/en/master/
+
+https://pythonspot.com/flask-web-app-with-python/
+
+https://gist.github.com/hduffddybz/daa4c931f6ea0bd7ed93#file-server-py
