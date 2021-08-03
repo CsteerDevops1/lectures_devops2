@@ -2,9 +2,12 @@
 """
 Побитовое ИЛИ
 """
+from operator import or_
 
-x = 1        # 0001
+x = 1  # 0001
 
-x | 2        # bitwise OR: 0011
+a = x | 2  # bitwise OR: 0011
 
-print(x)
+b = or_(x, 2)
+
+print(a, b)

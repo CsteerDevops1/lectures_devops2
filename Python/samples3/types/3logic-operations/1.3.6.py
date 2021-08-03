@@ -2,9 +2,12 @@
 """
 Побитовое И
 """
+from operator import and_
 
-x = 1        # 0001
+x = 1  # 0001
 
-x & 1        # bitwise AND: 0001
+a = x & 1  # bitwise AND: 0001
 
-print(x)
+b = and_(x, 1)
+
+print(a, b)
