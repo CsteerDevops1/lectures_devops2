@@ -3,10 +3,10 @@
 Запись строк в файл
 """
 
-f = open(r"c:\text\somefile.txt")
-lines = f.readlines()
-f.close()
+with open(r"c:\text\somefile.txt") as f:
+    lines = f.readlines()
+
 lines[1] = "isn't a\n"
-f = open(r"c:\text\somefile.txt", "w")
-f.writelines(lines)
-f.close()
+
+with open(r"c:\text\somefile.txt", "w") as f:
+    f.writelines(lines)

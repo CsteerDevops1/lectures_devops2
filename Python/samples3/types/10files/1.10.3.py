@@ -3,6 +3,5 @@
 Чтение из файла
 """
 
-f = open(r"c:\text\somefile.txt")
-print(f.read())
-f.close()
+with open(r"c:\text\somefile.txt") as f:
+    print(f.read())

@@ -9,6 +9,10 @@
 f = open("/tmp/workfile", "w")
 print(f)
 
+# Context manager
+with open("/tmp/workfile", "w") as f:
+    print(f)
+
 # mode can be "r" when the file will only be read,
 # "w" for only writing (an existing file with the same name will be erased),
 # "a" opens the file for appending; any data written to the file is automatically

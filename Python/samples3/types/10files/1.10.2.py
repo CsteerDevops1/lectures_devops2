@@ -17,3 +17,7 @@ f.close()
 print(f)
 
 print(f.closed)
+
+# Context manager
+with open("/etc/passwd", "r") as f:
+    pass

@@ -3,6 +3,6 @@
 Чтение строк из файла
 """
 
-f = open("filename")
-for line in f.readlines():
-    print("Line: " + line)
+with open("filename") as f:
+    for line in f:
+        print("Line: " + line)
