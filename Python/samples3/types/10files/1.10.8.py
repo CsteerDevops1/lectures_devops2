@@ -3,7 +3,10 @@
 Определение позиции в файле
 """
 
-with open(r"c:\text\somefile.txt") as f:
-    f.read(3)
-    f.read(2)
-    f.tell()
+with open("somefile", "wb") as f:
+    f.truncate(1024000)
+
+with open("somefile") as f:
+    print(f.read(3))
+    print(f.read(2))
+    print(f.tell())
