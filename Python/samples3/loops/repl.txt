@@ -1,0 +1,392 @@
+f=open("/etc/passwd",r)
+f=open("/etc/passwd",rb)
+f=open("/etc/passwd","rb")
+f
+dir(f)
+f.readlines()
+f.seek(0)
+f.readlines()
+f.seek(0)
+f=open("filek","w")
+f.close()
+f
+f.closed()
+print(f.closed())
+f.closed
+f=open("filek","w+")
+f.close()
+м=1
+м
+м;м
+м*м
+words = ['A', 'B', 'C', 'D', 'E']
+for word in words:
+    print(word)
+words = ['A', 'B', 'C', 'D', 'E',23432,32423,23432]
+for word in words: print(word)
+words = ['A', 'B', 'C', 'D', 'E',23432,32423,23432]
+for w in words: print(w)
+for i in [0,1,2,3,4,5]: print(i*i)
+b=[]
+for i in [0,1,2,3,4,5]: b.append(i)
+b
+for i in [0,1,2,3,4,5]: b.append(i*i)
+b
+for i in [0,1,2,3,4,5]: b.append((i,i*i))
+b
+b=[]
+for i in [0,1,2,3,4,5]: b.append((i,i*i))
+b
+for i in [0,1,2,3,4,5]:
+  break
+for i in [0,1,2,3,4,5]:
+  if i==3: break
+  print(i)
+d = {'x': 1, 'y': 2, 'z': 3}
+d
+for key in d:
+  print(key)
+for bbb in d:
+  print(bbb)
+for b in d:
+  print(b,end="")
+  print(d(b))
+  print(b,end="")
+for b in d:
+  print(b,end="")
+  print(d[b])
+for b in d:
+  print(b,end=" => ")
+  print(d[b])
+for b in d.items():
+  print(b)
+d.items()
+list(d.items())
+range(1,101)
+dir(range(1,101))
+range(1,101).__iter__()
+d=range(1,101).__iter__()
+next(d)
+dir(d)
+d.__next__()
+next(d)
+range(234325435143523432434532523)
+range(234325435143523432434532523243423)
+range(23432543514352343243453252324342323432423)
+range(23432543514352343243453252324342323432423,1)
+d=range(1101,2).__iter__()
+next(d)
+d=range(1101,2,-1).__iter__()
+next(d)
+d=range(1101,2,-4).__iter__()
+next(d)
+range(10,3,-3)
+list(range(10,3,-3))
+list(range(10,2,-3))
+list(range(10,1,-3))
+list(range(10,0,-3))
+while True:
+  pass
+while True:
+  if a % 2: a = 3*a+1
+  pass
+ls
+a = 2
+a = int('2')
+a
+f = open("/tmp/our_python_file","w")
+f
+dir(f)
+f.write("text")
+f.write("text, some more text")
+f.close()
+f
+f.closed()
+f.closed
+f = open("/tmp/our_python_file","w")
+f.write("Hello")
+f.write(", World!\n")
+f.close
+f.closed
+f.write("Hi!!!\n")
+f.close
+f.close()
+f.closed
+f = open("/etc/passwd","r")
+f
+f.readlines()
+a = f.readlines()
+a
+f.seek(0)
+a = f.readlines()
+a
+a[5]
+a[15]
+for line in a:
+  print(line)
+for line in a:
+  print(line,end="")
+users=[]
+for line in a:
+  users.append(a.split(":"))
+for line in a:
+  users.append(line.split(":"))
+users
+users[15]
+users[15][2]
+users[15][3]
+users[15][6]
+type(f)
+dir(f)
+f.seek(0)
+f.readline
+f.readline()
+f.seek()
+f.buffer()
+f.buffer
+f.seek(5)
+f.readline()
+f.readlines()
+f = open("/tmp/our_python_file","rw")
+f = open("/tmp/our_python_file","r+")
+f.readline()
+f.writeline("My own user!")
+dir(f)
+f.write("My own user!")
+f.readline()
+f.write("My second user!\n")
+f.readlines()
+f.close()
+f = open("/tmp/our_python_file","r+")
+f.readlines()
+f.seek(0)
+f.readline()
+for _ in range(6): f.readline()
+f.writelines("Hi!!!")
+f.readlines()
+f.close()
+f = open("/tmp/our_python_file","r+")
+f.writelines("Hi!!!","werew")
+f.writelines(["Hi!!!","werew"])
+f.close()
+f = open("/tmp/our_python_file","r+")
+for _ in range(16): f.readline()
+f.writelines(list(range(8)))
+f.writelines([str(i) for i in range(10)])
+f.readlines()
+f.close()
+f = open("/tmp/our_python_file","r+")
+for _ in range(16): f.readline()
+f.writelines([str(i)+"\n" for i in range(10)])
+f.close()
+import os
+dir(os)
+print "My name %s. I am %d years old" % ("Rasul",19)
+print("My name %s. I am %d years old" % ("Rasul",19))
+%d 
+input() vs raw_input()
+print("My name %s. I am %d years old" % ("Rasul","19"))
+input()
+19
+a = 2
+b = 3
+a,b = 2,3
+a
+a,b = 5,3
+a
+b
+(a,b) = (5,3)
+a
+a,b = 5,3
+tp=(4,8,10)
+tp
+a,b,c = tp
+a
+b
+c
+a,b,c = (4, 8, 10)
+a
+b
+c
+(a,b,c) = (4, 8, 10)
+a,b,c = 4, 8, 10
+a
+b
+c
+a,b,c = tp
+a
+b
+c
+a,b,c = (1,True,"Molodez")
+c
+b
+a
+d=(e,f,g)
+e = 10
+f = 11
+g = 12
+d=(e,f,g)
+d
+a,b,c,(j,k,l) = (1,True,"Molodez",d)
+j
+(a,b,c,(j,k,l)) = (1,True,"Molodez",(10, 11, 12))
+k
+constant = (3.14159265358987,2.718284590452)
+pi,e = constant
+pi
+e
+constant = (3.14159265358987,2.7182818284590452)
+pi,e = constant
+pi
+e
+a = b = 10
+a
+b
+a = b = (10,20)
+a
+b
+a,b = (10,20)
+a
+b
+a = b == 10
+a
+b
+a,b = (10,20,30)
+a,b = (10,)
+for k,v in {1:2,"mykey":"good"}:
+  print(str(k)+" : "+str(v))
+for k,v in {1:2,"mykey":"good"}.items():
+  print(str(k)+" : "+str(v))
+(k,v)
+{1:2,"mykey":"good"}.items()
+it={1:2,"mykey":"good"}.items()
+next(it)
+it={1:2,"mykey":"good"}.items().__iter__()
+next(it)
+(k,v) = (1, 2)
+print(str(k)+" : "+str(v))
+next(it)
+(k,v) = ('mykey', 'good')
+print(str(k)+" : "+str(v))
+k
+v
+for new_var in [1,10]:
+  pass
+new_var
+x=constants
+x=constant
+x
+for x in (1,2):
+  pass
+x
+5! = 5*4*3*2*1
+for i in range(1,6):
+  
+result=1
+for i in range(1,6):
+  result = result*i
+i
+result
+def fact(n):
+  if n==0 or n==1: return 1
+  return n*fact(n-1)
+fact(5)
+fact(10)
+fact(3)
+id(fact)
+type(fact)
+fact(1)
+fact(2)
+2*fact(1)
+2*1
+def fibb(n):
+  if n==0 or n==1: return 1
+  return fibb(n-2)+fibb(n-1)
+0 1 1 2 3 5 8 13
+def fibb(n):
+  if n==0 or n==1: return n
+  return fibb(n-2)+fibb(n-1)
+fibb(5)
+fibb(6)
+fibb(7)
+fibb(20)
+fibb(25)
+fibb(29)
+fibb(30)
+2**30
+1_073_741_824
+1_073_741_824 - 741_824
+{1:2,"mykey":"good"}
+b= {1:2,"mykey":"good"}
+for d in {1:2,"mykey":"good"}:
+  if d == 1: 
+for d in b:
+  if d == 1: b[1] = 4
+  pass
+d
+b
+b= {1:2,"mykey":"good"}
+b
+for d in b: if d == 1: b[1] = 4
+b= {1:2,"mykey":"good"}
+for d in b:
+  if d == 1: b[d] = 4
+b
+for d in b:
+  if d == 1: b[8] = 4
+  pass
+b= {1:2,"mykey":"good"}
+b[8] = 4
+b
+b= {1:2,"mykey":"good"}
+for d in b:
+  if d == 8: b[8] = 4
+  pass
+b
+lst=[1,2,3]
+for i in lst:
+  if i == 2: lst.append(4)
+  print(i)
+for i in lst:
+  if i == 2: lst.append(i)
+  print(i)
+len(lst)
+lst=[1,2,3]
+for i in lst:
+  if i == 2: lst[0]=4949
+  print(i)
+lst
+1 == 2 or 3
+2 or 3
+1 == 2
+False or 3
+1 == 2 or 3 and 6 == 4 and 5
+2 && 3
+2 & 3
+2 & 34
+12 & 34
+12 << 1
+12 >> 1
+bin(10)
+bin(5)
+bin(15)
+10 & 15
+10 & 5
+10 ^ 5
+10 | 5
+10 | 6
+10 ^ 6
+1 ^ 0
+0 ^ 1
+0 | 1
+0 | 0
+1 | 0
+1 | 1
+1 ^ 1
+1 ^ 0
+0 ^ 1
+0 ^ 0
+AND OR XOR
+import readline
+for i in range(readline.get_current_history_length()):
+    print (readline.get_history_item(i + 1))
