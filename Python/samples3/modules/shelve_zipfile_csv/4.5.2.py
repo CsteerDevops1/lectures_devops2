@@ -1,11 +1,13 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Сжатие
 """
-import zipfile
-import glob, os
 
-# open the zip file for writing, and write stuff to it
+import glob
+import os
+import zipfile
+
+# Open the zip file for writing, and write stuff to it
 
 file = zipfile.ZipFile("test.zip", "w")
 
@@ -20,7 +22,7 @@ file = zipfile.ZipFile("test.zip", "r")
 
 for name in file.namelist():
     data = file.read(name)
-    print name, len(data), repr(data[:10])
+    print(name, len(data), repr(data[:10]))
 
 for info in file.infolist():
-    print info.filename, info.date_time, info.file_size, info.compress_size
+    print(info.filename, info.date_time, info.file_size, info.compress_size)
