@@ -1,16 +1,15 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Переменные окружения
 """
 import os
 
-os.environ['USER'] = 'Mel'
-os.popen('python echoenv.py').read()
+os.environ["USER"] = "Mel"
+os.popen("python echoenv.py").read()
 
-import os
-os.environ.keys()
+print(os.environ.keys())
 
-os.environ['TEMP']
+os.environ["TEMP"]
 
-os.environ['TEMP'] = r'c:\temp'
-os.environ['TEMP']
+os.environ["TEMP"] = r"c:\temp"
+print(os.environ["TEMP"])

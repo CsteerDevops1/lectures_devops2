@@ -1,12 +1,15 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Завершение работы программы
 """
 
+
 def bye():
     import os
-    print 'Bye os world'
+    print("Bye os world")
     os._exit(99)
-    print 'Never reached'
+    print("Never reached")
 
-if __name__ == '__main__': bye()
+
+if __name__ == "__main__":
+    bye()

@@ -1,16 +1,28 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Разбор опций командной строки
 """
-from optparse import OptionParser
+# optparse deprecated since version 3.2
+import argparse
 
-parser = OptionParser()
-parser.add_option("-f", "--file", dest="filename",
-                  help="write report to FILE", metavar="FILE")
-parser.add_option("-q", "--quiet",
-                  action="store_false", dest="verbose", default=True,
-                  help="don't print status messages to stdout")
+parser = argparse.ArgumentParser(description="Process some integers.")
 
-(options, args) = parser.parse_args()
-print options.verbose
-print options.filename
+parser.add_argument(
+    "integers",
+    metavar="N",
+    type=int,
+    nargs="+",
+    help="an integer for the accumulator",
+)
+
+parser.add_argument(
+    "--sum",
+    dest="accumulate",
+    action="store_const",
+    const=sum,
+    default=max,
+    help="sum the integers (default: find the max)",
+)
+
+args = parser.parse_args()
+print(args.accumulate(args.integers))
