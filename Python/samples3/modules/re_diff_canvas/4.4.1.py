@@ -1,34 +1,36 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
+
 """
 Сравнение текстов
 """
-import sys
-from difflib import get_close_matches
-get_close_matches('appel', ['ape', 'apple', 'peach', 'puppy'])
 
 import keyword
-get_close_matches('wheel', keyword.kwlist)
+import sys
+from difflib import context_diff, get_close_matches
 
-get_close_matches('apple', keyword.kwlist)
+print(get_close_matches("appel", ["ape", "apple", "peach", "puppy"]))
 
-get_close_matches('accept', keyword.kwlist)
+print(get_close_matches("wheel", keyword.kwlist))
 
-text1 = """ 
+print(get_close_matches("apple", keyword.kwlist))
+
+print(get_close_matches("accept", keyword.kwlist))
+
+text1 = """
 Lavender's blue,
 Diddle diddle,
 Lavender's green,
 When I am king,
 Diddle diddle,
 You shall be queen.
-""" 
+"""
 
-text2 = u""" 
+text2 = """
 Lavender's blue,
 Lavender's green,
 When I am king,
 You shall be queen.
-""" 
+"""
 
-import difflib
-for line in difflib.context_diff(text1, text2, fromfile='text1', tofile='text2'):
-    sys.stdout.write(line)  
+for line in context_diff(text1, text2, fromfile="text1", tofile="text2"):
+    sys.stdout.write(line)

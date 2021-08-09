@@ -1,31 +1,31 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Регулярные выражения, поиск
 """
+
 import re
 
-line = "Cats are smarter than dogs";
+line = "Cats are smarter than dogs"
 
-matchObj = re.match( r'(.*) are(\.*)', line, re.M|re.I)
+match_obj = re.match(r"(.*) are(\.*)", line, re.M | re.I)
 
-if matchObj:
-   print "matchObj.group() : ", matchObj.group()
-   print "matchObj.group(1) : ", matchObj.group(1)
-   print "matchObj.group(2) : ", matchObj.group(2)
+if match_obj:
+    print("match_obj.group() : ", match_obj.group())
+    print("match_obj.group(1) : ", match_obj.group(1))
+    print("match_obj.group(2) : ", match_obj.group(2))
 else:
-   print "No match!!"
+    print("No match!!")
 
-line = "Cats are smarter than dogs";
+# line = "Cats are smarter than dogs"
 
-matchObj = re.match( r'dogs', line, re.M|re.I)
-if matchObj:
-   print "match --> matchObj.group() : ", matchObj.group()
+match_obj = re.match(r"dogs", line, re.M | re.I)
+if match_obj:
+    print("match --> match_obj.group() : ", match_obj.group())
 else:
-   print "No match!!" 
+    print("No match!!")
 
-matchObj = re.search( r'dogs', line, re.M|re.I)
-if matchObj:
-   print "search --> matchObj.group() : ", matchObj.group()
+match_obj = re.search(r"dogs", line, re.M | re.I)
+if match_obj:
+    print("search --> match_obj.group() : ", match_obj.group())
 else:
-   print "No match!!" 
-
+    print("No match!!")
