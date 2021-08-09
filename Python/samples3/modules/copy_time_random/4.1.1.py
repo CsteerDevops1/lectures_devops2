@@ -1,18 +1,26 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Поверхностное и глубокое копирование
 """
 import copy
 
-listOne = [{"name": "Willie", "city": "Providence, RI"}, 1, "tomato", 3.0]
+list_one = [
+    {
+        "name": "Willie",
+        "city": "Providence, RI",
+    },
+    1,
+    "tomato",
+    3.0,
+]
 
-listTwo = listOne[:]                   
-listTwo=copy.copy(listOne)
-listThree = copy.deepcopy(listOne)
+list_two = list_one[:]
+list_two = copy.copy(list_one)
+list_three = copy.deepcopy(list_one)
 
-listOne.append("kid")
-listOne[0]["city"] = "San Francisco, CA" 
+list_one.append("kid")
+list_one[0]["city"] = "San Francisco, CA"
 
-print listOne
-print listTwo
-print listThree
+print(list_one)
+print(list_two)
+print(list_three)

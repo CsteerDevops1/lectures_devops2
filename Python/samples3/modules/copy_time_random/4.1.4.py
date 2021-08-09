@@ -1,22 +1,22 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Календарь
 """
 import calendar
 
-month = 02
-year  = 2021
+month = 0o2
+year = 2021
 
-monthMatrix = calendar.monthcalendar(year, month)
+month_matrix = calendar.monthcalendar(year, month)
 
 # print out the heading
-print "%s %d\n" % (calendar.month_name[month], year)
+print(f"{calendar.month_name[month]} {year}\n")
 
 # print out each day in hex; if the day = 0, then leave it blank
-for week in monthMatrix:
+for week in month_matrix:
     for day in week:
         if day == 0:
-           print "  ",
+            print("  ", end=' ')
         else:
-           print "%2s" % (hex(day)[2:]), 
-    print
+            print(f"{hex(day)[2:]:>2}", end=' ')
+    print()
