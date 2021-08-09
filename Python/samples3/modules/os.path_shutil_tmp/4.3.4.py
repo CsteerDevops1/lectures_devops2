@@ -1,16 +1,17 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Создание временных файлов
 """
 import tempfile
 
 # read input file
-inputFile = open('input.txt', 'r')
+input_file = open("input.txt", "r")
 
 # create temporary file
-tempFile = tempfile.TemporaryFile()                   # we don't even need to 
-first_process(input = inputFile, output = tempFile)   # know the filename...
+temp_file = tempfile.TemporaryFile()
+# we don't even need to know the filename...
+first_process(input=input_file, output=temp_file)
 
 # create final output file
-outputFile = open('output.txt', 'w')
-second_process(input = tempFile, output = outputFile)
+output_file = open("output.txt", "w")
+second_process(input=temp_file, output=output_file)
