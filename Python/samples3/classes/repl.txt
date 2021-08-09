@@ -1,0 +1,386 @@
+a = 5 if True else 6
+a
+a = 5 if False else 6
+a
+if True:
+  a = 5
+else:
+  a = 6
+a
+a = 1
+b = 2
+c = a if a>b else b
+c
+a = 34
+b = 30
+c = a if a>b else b
+c
+c = (a if a>b else b) if False else 45
+c
+def sqr(n):
+  res = n*n
+  return res
+sqr(5)
+def sqr(n):
+  return n*n
+sqr(5)
+def sqr(n): return n*n
+sqr(5)
+sqr
+type(sqr)
+4
+lambda n : n*n
+sqr = lambda n : n*n
+sqr(3)
+sqr(5)
+(lambda n : n*n)(5)
+ages={"Rasul":20}
+ages
+"Rasul is "+ages['Rasul']+" years old"
+ages={"Rasul":"20"}
+"Rasul is "+ages['Rasul']+" years old"
+"Next Year Rasul will be "+str(int(ages['Rasul'])+1)+" years old"
+"Next Year Rasul will be "+(lambda n : str(int(n)+1))(ages['Rasul'])+" years old"
+"Next Year Rasul will be {} years old".format((lambda n : str(int(n)+1))(ages['Rasul']))
+lambda x : x+5
+inc5 = lambda x : x+5
+inc5(5)
+def inc5(n): return n+5
+dir(inc5)
+inc5.__name__
+inc_5 = inc5
+inc_5(6)
+inc_5.__name__
+del(inc5)
+inc5(5)
+inc_5.__name__
+inc5 = lambda x : x+5
+inc5.__name__
+quadratic_list = lambda x : [ i*i for i in range(1,x+1) ]
+quadratic_list(100)
+quadratic_list(20)
+sorted([["str",2],["dsfs",5]],lambda x : x[1])
+sorted([["str",2],["dsfs",5]],key = lambda x : x[1])
+sorted([["str",2],["dsfs",5],["eee",1]],key = lambda x : x[1])
+[ i*i for i in range(1,x+1) ]
+filter, map, reduce
+type(4)
+dir(5)
+dir(10)
+10.real
+(10).real
+(5).real
+(5+1j).real
+(5+1j).imag
+(5).__add__
+(5).__add__()
+(5).__add__(5)
+for i in "privet": print(i)
+for i in [1,2,3]: print(i)
+5
+print(5)
+type("sre")
+a = type("sre")
+a
+type(a)
+int("3")
+a = int(3)
+a
+a = "netri"
+class rec:
+  pass
+type(rec)
+a = rec()
+a
+type(a)
+a.number = 5
+a
+a.number
+a.b="str text"
+a.b
+a.c
+a.c = lamba x : x*x
+a.c = lambda x : x*x
+a.c(3)
+a.b
+a b c number
+a
+del(a)
+a.b
+import random
+random.random()
+random.randint()
+random.randint(1,10)
+dir(random)
+a = 4
+type(a)
+dir(a)
+a.x2()
+class my_int(int):
+  def x2(self): return self*2
+b = my_int(4)
+b.x2()
+c = my_int(8)
+c.x2
+c.x2()
+b + c
+print(b)
+b-3
+c-3
+b.x2()
+c.x2()
+1/4+1/2
+3/4
+print(fractional(0.75))
+3/4
+import Fractional
+import Fractionals
+import fractions
+fractions.fractions(1/5)
+dir(fractions)
+fractions(1/5)
+fractions.Fraction(1/5)
+fractions.Fraction(1/4)+fractions.Fraction(1/2)
+class MixedNames:
+  data = "spam"
+  def __init__(self, value):
+    self.data = value
+x = MixedNames(5)
+x
+x.data
+class MixedNames:
+  def __init__(self, value):
+    self.data = value
+x = MixedNames(5)
+x
+x.data
+x = MixedNames("Text")
+x.data
+m1 = Employee(name="Rasul",phone=9055,salary=10000)
+class Employee:
+  def __init__(self,name,phone,salary=10000):
+    self.name = name
+    self.phone = phone
+    self.salary = salary
+m1 = Employee(name="Rasul",phone=9055,salary=10000)
+m1
+type(m1)
+m1.name
+m1.phone
+m1.salary
+m1 = Employee(name="Rasul",phone=9055,salary=20000)
+m1.salary
+m2 = Employee(name="Mary",phone=9055)
+m2
+m2.name
+m2.salary
+m2.salary = 20000
+m2.salary
+m2.name
+class Employee:
+  def __init__(self,name,phone,salary=10000):
+    self.name = name
+    self.phone = phone
+    self.salary = salary
+  def print_info(self):
+    print("Employee {} has phone {} and gets {} rubles".format(self.name,self.phone,self.phone))
+m2 = Employee(name="Mary",phone=9055)
+m2.print_info()
+class Employee:
+  def __init__(self,name,phone,salary=10000):
+    self.name = name
+    self.phone = phone
+    self.salary = salary
+  def print_info(self):
+    print("Employee {} has phone {} and gets {} rubles".format(self.name,self.phone,self.salary))
+m2 = Employee(name="Mary",phone=9055)
+mw.print_info()
+m2.print_info()
+class Employee:
+  def __init__(self,name,phone,salary=10000):
+    self.name = name
+    self.phone = phone
+    self.salary = salary
+  def print_salary_info(self):
+    print("Employee {} gets {} Rubles".format(self.name,self.salary))
+  def add_salary(self,delta=5000):
+    self.salary = self.salary+delta
+m2 = Employee(name="Mary",phone=9055)
+m2.print_salary()
+m2.print_salary_info()
+m2.add_salary()
+m2.print_salary_info()
+m2.add_salary()
+m2.print_salary_info()
+class Employee:
+  def __init__(self,name,phone,salary=10000):
+    self.name = name
+    self.phone = phone
+    self.salary = salary
+  def print_salary_info(self):
+    print("Employee {} gets {} Rubles".format(self.name,self.salary))
+  def add_salary(self,delta=5000):
+    self.salary = self.salary+delta
+  def add(self,other_empl):
+    new_name = self.name + "&" + other_empl.name
+    new_phone = str(round( (int(self.phone) + int(other_empl.phone))/2 ))
+    new_salary = self.salary + other_empl.salary
+    return Employee(new_name,new_phone,new_salary)
+  __add__=add
+class US_Employee(Employee):
+  def print_salary_info(self):
+    print("Mister {} gets {} Dollars".format(self.name,self.salary))
+m2 = Employee(name="Mary",phone=9055)
+m2
+m2.print_salary_info()
+m3 = US_Employee(name="John",phone=8873)
+m3.print_salary_info()
+type(m3)
+type(m2)
+import inspect
+inspect.getmro(Employee)
+inspect.getmro(US_Employee)
+dir(m2)
+m2.__dir__()
+4+4
+4.__add__(4)
+(4).__add__(4)
+class my_int(int):
+  def __add__(self,arg): return 25
+a=my_int("35")
+a.__add__(34)
+a+35
+a*4
+35 * 4
+class my_int(int):
+  def __int__(self): return int(self)+1
+my_int(5)
+a = my_int(5)
+a
+a+4
+class my_int(int):
+  def __init__(self): return int(self)+1
+a = my_int(5)
+class my_int(int):
+  def __init__(self,value): return int(value)+1
+a = my_int(5)
+class Employee:
+  def __init__(self,name,phone,salary=10000):
+    self.name = name
+    self.phone = phone
+    self.salary = salary
+  def print_salary_info(self):
+    print("Employee {} gets {} Rubles".format(self.name,self.salary))
+  def add_salary(self,delta=5000):
+    self.salary = self.salary+delta
+  def add(self,other_empl):
+    new_name = self.name + "&" + other_empl.name
+    new_phone = str(round( (int(self.phone) + int(other_empl.phone))/2 ))
+    new_salary = self.salary + other_empl.salary
+    return Employee(new_name,new_phone,new_salary)
+  __add__=add
+4+5
+m2 = Employee(name="Mary",phone=9055)
+m3 = Employee(name="John",phone=9056)
+m2.print_salary_info()
+m3.print_salary_info()
+m3.add_salary()
+m3.print_salary_info()
+m2.add(m3)
+m4 = m2.add(m3)
+m4.print_salary_info()
+m4.phone
+m3.phone=9057
+m2.add(m3)
+m4 = m2.add(m3)
+m4.phone
+m3.phone
+m3.phone+4
+m4.phone+4
+m4 = m2 + m3
+m4.print_salary_info()
+m5 = m2 + m3
+m5.print_salary_info()
+dir(4)
+my_int(4)
+a=4
+a.__add__ = lambda x : return 45
+a.__add__ = lambda x : 45
+class Employee:
+  def __init__(self,name,phone,salary=10000):
+    self.name = name
+    self.phone = phone
+    self.salary = salary
+  def print_salary_info(self):
+    print("Employee {} gets {} Rubles".format(self.name,self.salary))
+  def add_salary(self,delta=5000):
+    self.salary = self.salary+delta
+  def add(self,other_empl):
+    new_name = self.name + "&" + other_empl.name
+    new_phone = str(round( (int(self.phone) + int(other_empl.phone))/2 ))
+    new_salary = self.salary + other_empl.salary
+    return Employee(new_name,new_phone,new_salary)
+  __add__=add
+  def __del__(self):
+    print(self.name+" is FIRED!!!")
+m2 = Employee(name="Mary",phone=9055)
+m2.print_salary_info()
+m2 = 4
+class MixedNames:
+  data = "spam"
+  def __init__(self, value):
+    self.data = value
+  def display(self):
+    print((self.data, MixedNames.data))
+x = MixedNames(1)
+y = MixedNames(2)
+MixedNames.data
+x = MixedNames(1)
+y = MixedNames(2)
+x.display()
+y.display()
+class MixedNames:
+  data = "spam"
+  def __init__(self, value):
+    print(self.data)
+    self.data = value
+  def display(self):
+    print((self.data, MixedNames.data))
+x = MixedNames(1)
+x = MixedNames(2)
+x.data
+x.display()
+ip_addr = "192.168.1.4"
+ip_addr,net_addr_mask = "192.168.1.4","255.255.255.0"
+net_addr(ip_addr,net_addr_mask) ==> "192.168.1.0"
+import ipaddress
+ipaddress.ipaddress("192.168.1.4")
+ipaddress.ipv4address("192.168.1.4")
+dir(ipaddress)
+ipaddress.IPv4Address("192.168.1.4")
+m2
+class Employee:
+  def __init__(self,name,phone,salary=10000):
+    self.name = name
+    self.phone = phone
+    self.salary = salary
+  def print_salary_info(self):
+    print("Employee {} gets {} Rubles".format(self.name,self.salary))
+  def add_salary(self,delta=5000):
+    self.salary = self.salary+delta
+  def add(self,other_empl):
+    new_name = self.name + "&" + other_empl.name
+    new_phone = str(round( (int(self.phone) + int(other_empl.phone))/2 ))
+    new_salary = self.salary + other_empl.salary
+    return Employee(new_name,new_phone,new_salary)
+  __add__=add
+  def __del__(self):
+    print(self.name+" is FIRED!!!")
+class US_Employee(Employee):
+  def print_salary_info(self):
+    print("Mister {} gets {} Dollars".format(self.name,self.salary))
+m2 = Employee(name="Mary",phone=9055)
+m2.__dict__
+import readline
+for i in range(readline.get_current_history_length()):
+    print (readline.get_history_item(i + 1))
