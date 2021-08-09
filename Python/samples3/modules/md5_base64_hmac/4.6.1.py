@@ -1,4 +1,4 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Вычисление хэша
 """
@@ -6,10 +6,11 @@
 import hashlib
 
 m = hashlib.md5()
-m.update("Nobody inspects")
-m.update(" the spammish repetition")
-m.digest()
+# Feeding string objects into update() is not supported, as hashes work on bytes, not on characters.
+m.update(b"Nobody inspects")
+m.update(b" the spammish repetition")
+print(m.digest())
 
-m.digest_size
+print(m.digest_size)
 
-m.block_size
+print(m.block_size)

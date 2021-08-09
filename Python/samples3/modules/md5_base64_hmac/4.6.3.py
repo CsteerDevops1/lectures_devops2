@@ -1,10 +1,10 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
 """
 Koд аутентификации сообщения HMAC
 """
 import hmac
 
-m = hmac.new('password')
-m.update("Nobody inspects")
-m.update(" the spammish repetition")
-m.digest()
+m = hmac.new(key=b"password", digestmod="sha1")
+m.update(b"Nobody inspects")
+m.update(b" the spammish repetition")
+print(m.digest())
