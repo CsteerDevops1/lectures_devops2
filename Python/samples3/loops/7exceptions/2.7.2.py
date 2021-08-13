@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Вложенная обработка
+https://docs.python.org/3/tutorial/errors.html
 """
 
 try:

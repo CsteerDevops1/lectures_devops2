@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Логическое ИЛИ
+https://docs.python.org/3/library/stdtypes.html?highlight=bitwise
 """
 
 print('a' or 'b')

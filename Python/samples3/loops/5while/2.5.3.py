@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Цикл с завершением
+https://docs.python.org/3/reference/simple_stmts.html#break
 """
 
 y = 10

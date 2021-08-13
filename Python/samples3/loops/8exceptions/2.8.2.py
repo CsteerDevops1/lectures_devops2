@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Ошибка использования типа
+https://docs.python.org/3/library/exceptions.html#exception-hierarchy#concrete-exceptions
 """
 
 value = "2" 

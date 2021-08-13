@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Базовый синтаксис
+https://docs.python.org/3/library/exceptions.html#ValueError
 """
 
 try:

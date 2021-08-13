@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Составное условие
+https://docs.python.org/3/tutorial/controlflow.html#if-statements
 """
 
 number = 10

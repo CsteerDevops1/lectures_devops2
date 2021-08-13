@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Возбуждение исключения
+https://docs.python.org/3/reference/simple_stmts.html#raise
 """
 
 

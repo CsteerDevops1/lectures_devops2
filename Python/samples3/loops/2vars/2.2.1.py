@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Динамическая типизация
+https://docs.python.org/3/library/typing.html?highlight=typing#the-any-type
 """
 
 x = 0            # x bound to an integer object

@@ -1,6 +1,7 @@
 #!/usr/bin/python3
 """
 Иерархия встроенных исключений
+https://docs.python.org/3/library/exceptions.html#exception-hierarchy
 
 BaseException
  +-- SystemExit
