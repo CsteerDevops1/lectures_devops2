@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Tasks</title>
+    <link rel="stylesheet" href="{{ url_for('static',filename='styles/style.css') }}">
+</head>
+<body>
+{% block body %}
+    <table border=1>
+        <TR>
+           <TD>ID</TD>
+           <TD>Task</TD>
+           <TD>Status</TD>
+           <TD>Result</TD>
+        </TR>
+        {% for task in lst %}
+        <TR>
+            <TD>{{task.id}}</TD>
+            <TD>{{task.taskNumber}}</TD>
+            {% if task.taskStatus == "Ready to start" %}
+            <TD class="statusReady">{{task.taskStatus}}</TD>
+            {% elif task.taskStatus == "Finished" %}
+            <TD class="statusClosed">{{task.taskStatus}}</TD>
+            {% else %}
+            <TD class="statusInProgress">{{task.taskStatus}}</TD>
+            {% endif %}
+           <TD>{{task.taskResult}}</TD>
+        </TR>
+        {% endfor %}
+    </table>
+{% endblock %}
+</body>
+</html>
