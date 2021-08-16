@@ -2,7 +2,7 @@ import unittest
 from hw21 import merge
 
 
-class TestNarr(unittest.TestCase):
+class Test_Merge(unittest.TestCase):
     def test_size_0(self):
         self.assertEqual(list(merge((x for x in range(0)), (y for y in range(0)))), [])
 
