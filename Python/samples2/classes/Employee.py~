@@ -22,7 +22,7 @@ class US_Employee(Employee):
   def print_salary_info(self):
     print("Mister {} gets {} Dollars".format(self.name,self.salary))
 
-if __name__ == "__main__":
+if name == "__main__":
   first_empl = Employee("Rasul","9055",salary=20000)
   first_empl.print_salary_info()
 
