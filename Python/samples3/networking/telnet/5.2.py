@@ -1,24 +1,25 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
+
 """
 Получение списка файлов в домашнем каталоге
 """
+
 import getpass
-import sys
 import telnetlib
 
-HOST = "localhost" 
-user = raw_input("Enter your remote account: ")
+HOST = "localhost"
+user = input("Enter your remote account: ")
 password = getpass.getpass()
 
 tn = telnetlib.Telnet(HOST)
 
-tn.read_until("login: ")
-tn.write(user + "\n")
+tn.read_until(b"login: ")
+tn.write(user.encode('ascii') + b"\n")
 if password:
-    tn.read_until("Password: ")
-    tn.write(password + "\n")
+    tn.read_until(b"Password: ")
+    tn.write(password.encode('ascii') + b"\n")
 
-tn.write("ls\n")
-tn.write("exit\n")
+tn.write(b"ls\n")
+tn.write(b"exit\n")
 
-print tn.read_all()
+print(tn.read_all().decode('ascii'))
