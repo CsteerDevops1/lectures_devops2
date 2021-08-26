@@ -1,13 +1,17 @@
-# -*- encoding: utf-8 -*-
+#!/usr/bin/env python3
+
 """
 Получение почты по протоколу POP3
 """
-import getpass, poplib
 
-M = poplib.POP3('localhost')
-M.user(getpass.getuser())
-M.pass_(getpass.getpass())
-numMessages = len(M.list()[1])
-for i in range(numMessages):
-    for j in M.retr(i+1)[1]:
-        print j
+import getpass
+import poplib
+
+mailbox = poplib.POP3("localhost")
+mailbox.user(getpass.getuser())
+mailbox.pass_(getpass.getpass())
+num_messages = len(mailbox.list()[1])
+
+for i in range(num_messages):
+    for j in mailbox.retr(i + 1)[1]:
+        print(j)
