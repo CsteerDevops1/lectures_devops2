@@ -6,7 +6,7 @@ UDP эхо-сервер
 
 import socket, traceback
 
-host = ''
+host = '127.0.0.1'
 port = 51423
 
 s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
